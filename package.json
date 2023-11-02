@@ -1,0 +1,19 @@
+{
+  "name": "origin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Illusion137/Origin.git"
+  },
+  "author": "Illusion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Illusion137/Origin/issues"
+  },
+  "homepage": "https://github.com/Illusion137/Origin#readme"
+}
