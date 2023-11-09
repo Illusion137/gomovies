@@ -34,9 +34,39 @@ export interface GoMovieFilters {
     genre? : FiltersGenre_gm[],
     country? : FiltersCountry_gm[],
 };
-
-export interface GoMovie {
+export interface GoMovieSourceData {
+    host : string
+    data_linkid : string,
+}
+export interface GoMovieAjaxSource{
+    link : string,
+    sources : any[],
     title : string,
+    tracks : any[],
+    type : string, 
+}
+export interface GoMovieMovie {
+    id: string,
+    title : string,
+    href : string,
+    thumbnail_url : string,
+    quality : string,
+    trailer_url : string,
+    imdb_rating : string,
+    released : string,
+    duration : string,
+    genres : Genre_gm[] | string[],
+    countries : Country_gm[] | string[],
+    productions : HrefString[],
+    cast : HrefString[],
+    description : string,
+    vote_info : string,
+    sources_list : GoMovieSourceData[],
+    may_also_like : GoMovie_Display_Content[]
+};
+export interface GoMovieTV {
+    title : string,
+    thumbnail_url : string,
     quality : string,
     href : string,
     trailer_url : string,
@@ -44,7 +74,7 @@ export interface GoMovie {
     stars_ten : number,
     voted : number,
     released : string,
-    duation : string,
+    duration : string,
     genres : Genre_gm[],
     countries : Country_gm[],
     productions : HrefString[],

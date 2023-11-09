@@ -83,21 +83,21 @@ export enum Path_gm {
     Cast = "cast/",
 };
 export enum FiltersType_gm{
-    Movies = "type=movie",
-    TV_Shows = "type=tv"
+    Movies = "&type=movie",
+    TV_Shows = "&type=tv"
 };
 export enum FiltersQuality_gm{
-    HD = "quality=",
-    SD = "quality=",
-    CAM = "quality="
+    HD = "&quality=HD",
+    SD = "&quality=SD",
+    CAM = "&quality=CAM"
 };
 export enum FiltersReleased_gm{
-    _2023_ = "release_year=2023",
-    _2022_ = "release_year=2022",
-    _2021_ = "release_year=2021",
-    _2020_ = "release_year=2020",
-    _2019_ = "release_year=2019",
-    Older = "release_year=older-2019"
+    _2023 = "&release_year=2023",
+    _2022 = "&release_year=2022",
+    _2021 = "&release_year=2021",
+    _2020 = "&release_year=2020",
+    _2019 = "&release_year=2019",
+    Older = "&release_year=older-2019"
 };
 export enum FiltersGenre_gm{ // document.querySelectorAll("[name='genres[]']")
     Action = "10",
